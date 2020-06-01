@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		030C3ED52485661B00E41839 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030C3ED42485661B00E41839 /* Utilities.swift */; };
+		034D1F7424848E40002EA5E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D1F7324848E40002EA5E5 /* AppDelegate.swift */; };
+		034D1F7624848E40002EA5E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D1F7524848E40002EA5E5 /* SceneDelegate.swift */; };
+		034D1F7B24848E40002EA5E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034D1F7924848E40002EA5E5 /* Main.storyboard */; };
+		034D1F7D24848E42002EA5E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034D1F7C24848E42002EA5E5 /* Assets.xcassets */; };
+		034D1F8024848E42002EA5E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034D1F7E24848E42002EA5E5 /* LaunchScreen.storyboard */; };
+		034D1F8924848F11002EA5E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D1F8824848F11002EA5E5 /* LoginViewController.swift */; };
+		034D1F8B24848F1E002EA5E5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D1F8A24848F1E002EA5E5 /* SignUpViewController.swift */; };
+		034D1F8D24848F2B002EA5E5 /* StudySessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D1F8C24848F2B002EA5E5 /* StudySessionViewController.swift */; };
+		034D1F922484907A002EA5E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D1F912484907A002EA5E5 /* Constants.swift */; };
+		0365DA3324856A0D006101C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0365DA3224856A0D006101C2 /* GoogleService-Info.plist */; };
+		FE2BC0FB99A78AE70FA78B56 /* Pods_FocusTree_Renew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B06742CB26717B333B5DF4 /* Pods_FocusTree_Renew.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		030C3ED42485661B00E41839 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		034D1F7024848E40002EA5E5 /* FocusTree Renew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FocusTree Renew.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		034D1F7324848E40002EA5E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		034D1F7524848E40002EA5E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		034D1F7A24848E40002EA5E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		034D1F7C24848E42002EA5E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		034D1F7F24848E42002EA5E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		034D1F8124848E42002EA5E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		034D1F8824848F11002EA5E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		034D1F8A24848F1E002EA5E5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		034D1F8C24848F2B002EA5E5 /* StudySessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySessionViewController.swift; sourceTree = "<group>"; };
+		034D1F912484907A002EA5E5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0365DA3224856A0D006101C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		121F0E0B3E2DB4CC58DD729D /* Pods-FocusTree Renew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTree Renew.debug.xcconfig"; path = "Target Support Files/Pods-FocusTree Renew/Pods-FocusTree Renew.debug.xcconfig"; sourceTree = "<group>"; };
+		40EFB61E084101219AEC3566 /* Pods-FocusTree Renew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTree Renew.release.xcconfig"; path = "Target Support Files/Pods-FocusTree Renew/Pods-FocusTree Renew.release.xcconfig"; sourceTree = "<group>"; };
+		D0B06742CB26717B333B5DF4 /* Pods_FocusTree_Renew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FocusTree_Renew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		034D1F6D24848E40002EA5E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2BC0FB99A78AE70FA78B56 /* Pods_FocusTree_Renew.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034D1F6724848E40002EA5E5 = {
+			isa = PBXGroup;
+			children = (
+				034D1F7224848E40002EA5E5 /* FocusTree Renew */,
+				034D1F7124848E40002EA5E5 /* Products */,
+				410B0D198B79695E7E815A2B /* Pods */,
+				E16FD043B53A7075498B92BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		034D1F7124848E40002EA5E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				034D1F7024848E40002EA5E5 /* FocusTree Renew.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		034D1F7224848E40002EA5E5 /* FocusTree Renew */ = {
+			isa = PBXGroup;
+			children = (
+				034D1F8E2484905C002EA5E5 /* Helpers */,
+				034D1F8724848EFF002EA5E5 /* View Controllers */,
+				034D1F7324848E40002EA5E5 /* AppDelegate.swift */,
+				034D1F7524848E40002EA5E5 /* SceneDelegate.swift */,
+				034D1F7924848E40002EA5E5 /* Main.storyboard */,
+				034D1F7C24848E42002EA5E5 /* Assets.xcassets */,
+				034D1F7E24848E42002EA5E5 /* LaunchScreen.storyboard */,
+				0365DA3224856A0D006101C2 /* GoogleService-Info.plist */,
+				034D1F8124848E42002EA5E5 /* Info.plist */,
+			);
+			path = "FocusTree Renew";
+			sourceTree = "<group>";
+		};
+		034D1F8724848EFF002EA5E5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				034D1F8824848F11002EA5E5 /* LoginViewController.swift */,
+				034D1F8A24848F1E002EA5E5 /* SignUpViewController.swift */,
+				034D1F8C24848F2B002EA5E5 /* StudySessionViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		034D1F8E2484905C002EA5E5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				034D1F912484907A002EA5E5 /* Constants.swift */,
+				030C3ED42485661B00E41839 /* Utilities.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		410B0D198B79695E7E815A2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				121F0E0B3E2DB4CC58DD729D /* Pods-FocusTree Renew.debug.xcconfig */,
+				40EFB61E084101219AEC3566 /* Pods-FocusTree Renew.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E16FD043B53A7075498B92BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0B06742CB26717B333B5DF4 /* Pods_FocusTree_Renew.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		034D1F6F24848E40002EA5E5 /* FocusTree Renew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 034D1F8424848E42002EA5E5 /* Build configuration list for PBXNativeTarget "FocusTree Renew" */;
+			buildPhases = (
+				5939E6476310AD40D5DE891A /* [CP] Check Pods Manifest.lock */,
+				034D1F6C24848E40002EA5E5 /* Sources */,
+				034D1F6D24848E40002EA5E5 /* Frameworks */,
+				034D1F6E24848E40002EA5E5 /* Resources */,
+				A4A13731699013801E4EABD7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FocusTree Renew";
+			productName = "FocusTree Renew";
+			productReference = 034D1F7024848E40002EA5E5 /* FocusTree Renew.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		034D1F6824848E40002EA5E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Zaichen;
+				TargetAttributes = {
+					034D1F6F24848E40002EA5E5 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 034D1F6B24848E40002EA5E5 /* Build configuration list for PBXProject "FocusTree Renew" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 034D1F6724848E40002EA5E5;
+			productRefGroup = 034D1F7124848E40002EA5E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				034D1F6F24848E40002EA5E5 /* FocusTree Renew */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		034D1F6E24848E40002EA5E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034D1F8024848E42002EA5E5 /* LaunchScreen.storyboard in Resources */,
+				0365DA3324856A0D006101C2 /* GoogleService-Info.plist in Resources */,
+				034D1F7D24848E42002EA5E5 /* Assets.xcassets in Resources */,
+				034D1F7B24848E40002EA5E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5939E6476310AD40D5DE891A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FocusTree Renew-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4A13731699013801E4EABD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FocusTree Renew/Pods-FocusTree Renew-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FocusTree Renew/Pods-FocusTree Renew-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FocusTree Renew/Pods-FocusTree Renew-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		034D1F6C24848E40002EA5E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				034D1F8924848F11002EA5E5 /* LoginViewController.swift in Sources */,
+				034D1F8D24848F2B002EA5E5 /* StudySessionViewController.swift in Sources */,
+				030C3ED52485661B00E41839 /* Utilities.swift in Sources */,
+				034D1F7424848E40002EA5E5 /* AppDelegate.swift in Sources */,
+				034D1F7624848E40002EA5E5 /* SceneDelegate.swift in Sources */,
+				034D1F8B24848F1E002EA5E5 /* SignUpViewController.swift in Sources */,
+				034D1F922484907A002EA5E5 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		034D1F7924848E40002EA5E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				034D1F7A24848E40002EA5E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		034D1F7E24848E42002EA5E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				034D1F7F24848E42002EA5E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		034D1F8224848E42002EA5E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		034D1F8324848E42002EA5E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		034D1F8524848E42002EA5E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 121F0E0B3E2DB4CC58DD729D /* Pods-FocusTree Renew.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FocusTree Renew/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Zaichen.FocusTree-Renew";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		034D1F8624848E42002EA5E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40EFB61E084101219AEC3566 /* Pods-FocusTree Renew.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FocusTree Renew/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Zaichen.FocusTree-Renew";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		034D1F6B24848E40002EA5E5 /* Build configuration list for PBXProject "FocusTree Renew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034D1F8224848E42002EA5E5 /* Debug */,
+				034D1F8324848E42002EA5E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		034D1F8424848E42002EA5E5 /* Build configuration list for PBXNativeTarget "FocusTree Renew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034D1F8524848E42002EA5E5 /* Debug */,
+				034D1F8624848E42002EA5E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 034D1F6824848E40002EA5E5 /* Project object */;
+}
