@@ -41,7 +41,7 @@
                                         <rect key="frame" x="0.0" y="240" width="334" height="40"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
-                                            <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jq0-1S-6fu"/>
+                                            <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4hs-Us-1be"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhD-b8-sFx">
@@ -78,6 +78,8 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="F3j-tr-J4G" id="YeS-Lp-gE6"/>
+                        <outlet property="errorLabel" destination="mhD-b8-sFx" id="5rZ-eA-ccu"/>
+                        <outlet property="loginButton" destination="BlI-oi-oaq" id="oYL-CP-te8"/>
                         <outlet property="passwordTextField" destination="iME-6L-rHw" id="Nm4-l8-eu1"/>
                     </connections>
                 </viewController>

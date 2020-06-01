@@ -30,6 +30,9 @@ class SignUpViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         setUpElements()
+        if UserDefaults.standard.bool(forKey: "isUserLoggedIn") == true {
+            transitionToStudySession()
+        }
     }
     
     func setUpElements() {
@@ -119,7 +122,8 @@ class SignUpViewController: UIViewController {
             
         }
         
-        transitionToStudySession()
+        UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
+        transitionToStudySession()  
     }
     
     @IBAction func loginTapped(_ sender: Any) {
