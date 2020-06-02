@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view
         setUpElements()
     }
     
@@ -84,6 +84,7 @@ class LoginViewController: UIViewController {
                 }
                 else{
                     UserDefaults.standard.set(true, forKey: Constants.UserDefaults.isUserLoggedIn)
+                    UserDefaults.standard.synchronize()
                     self.checkUserInfo()
                 }
             }
@@ -91,6 +92,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signUpTapped(_ sender: Any) {
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard.instantiateViewController(identifier: Constants.Storyboard.signUpViewController)
