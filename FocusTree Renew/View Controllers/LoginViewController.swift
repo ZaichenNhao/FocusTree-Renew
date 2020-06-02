@@ -25,9 +25,6 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         setUpElements()
-        if UserDefaults.standard.bool(forKey: "isUserLoggedIn") == true {
-            self.checkUserInfo()
-        }
     }
     
     func setUpElements(){
@@ -86,7 +83,7 @@ class LoginViewController: UIViewController {
                     self.errorLabel.alpha = 1
                 }
                 else{
-                    UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
+                    UserDefaults.standard.set(true, forKey: Constants.UserDefaults.isUserLoggedIn)
                     self.checkUserInfo()
                 }
             }

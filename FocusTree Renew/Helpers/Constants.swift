@@ -19,4 +19,9 @@ struct Constants {
         static let studySessionViewController = "studySessionVC"
         
     }
+    
+    struct UserDefaults {
+        
+        static let isUserLoggedIn = "isUserLoggedIn"
+    }
 }
