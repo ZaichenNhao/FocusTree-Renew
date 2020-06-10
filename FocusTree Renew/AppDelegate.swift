@@ -17,20 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        
-        UserDefaults.standard.synchronize()
-        
-        let doneOnBoarding = UserDefaults.standard.bool(forKey: Constants.UserDefaults.doneOnBoarding)
-        
-        if doneOnBoarding==true {
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: Constants.Storyboard.loginViewController)
-            self.window = UIWindow(frame: UIScreen.main.bounds)
-            self.window?.rootViewController = vc
-            self.window?.makeKeyAndVisible()
-            
-        }
         return true
     }
 

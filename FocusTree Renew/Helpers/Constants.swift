@@ -18,6 +18,8 @@ struct Constants {
         
         static let studySessionViewController = "studySessionVC"
         
+        static let onBoardingViewController = "onBoardingVC"
+        
     }
     
     struct UserDefaults {

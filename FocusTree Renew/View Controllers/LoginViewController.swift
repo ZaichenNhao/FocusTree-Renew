@@ -24,8 +24,34 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view
-        autoSignIn()
+        chooseDisplay()
         setUpElements()
+    }
+    
+    func chooseDisplay() {
+        
+        let onBoarding = UserDefaults.standard.bool(forKey: Constants.UserDefaults.doneOnBoarding)
+        
+        if onBoarding != true {
+            
+            haveDoneOnBoarding()
+            
+        }
+        else {
+            autoSignIn()
+        }
+    }
+    
+    func haveDoneOnBoarding() {
+            
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+        let vc = storyboard.instantiateViewController(identifier: Constants.Storyboard.onBoardingViewController)
+            
+        vc.modalPresentationStyle = .overFullScreen
+            
+        present(vc, animated: true)
+            
     }
     
     func setUpElements(){
@@ -90,6 +116,7 @@ class LoginViewController: UIViewController {
         vc.modalPresentationStyle = .overFullScreen
             
         present(vc, animated: true)
+        
     }
     
     func SaveSetting() {
