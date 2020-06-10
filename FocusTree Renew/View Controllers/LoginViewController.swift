@@ -43,12 +43,21 @@ class LoginViewController: UIViewController {
             
             let username:String? = UserDefaults.standard.string(forKey: Constants.UserDefaults.Username)
             let password:String? = UserDefaults.standard.string(forKey: Constants.UserDefaults.Password)
+            let defaultUsername:String! = Constants.UserDefaults.defaultUsername
+            let defaultPassword:String! = Constants.UserDefaults.defaultPassword
             
-            Auth.auth().signIn(withEmail: username, password: password) { (result, err) in
+                Auth.auth().signIn(withEmail: username ?? defaultUsername, password: password ?? defaultPassword) { (result, err) in
                 
                 if err != nil {
-                    self.errorLabel.alpha = 1
-                    self.errorLabel.text = err!.localizedDescription
+                    
+                    if username != nil {
+                        self.errorLabel.alpha = 1
+                        self.errorLabel.text = err!.localizedDescription
+                    }
+                    
+                    else {
+                        self.errorLabel.alpha = 0
+                    }
                 }
                 else {
                     self.checkUserInfo()
@@ -92,6 +101,7 @@ class LoginViewController: UIViewController {
         
         defaults.set(username, forKey: Constants.UserDefaults.Username)
         defaults.set(password, forKey: Constants.UserDefaults.Password)
+        defaults.set(true, forKey: Constants.UserDefaults.isUserLoggedIn)
         
     }
     

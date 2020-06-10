@@ -18,6 +18,7 @@
 		034D1F8D24848F2B002EA5E5 /* StudySessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D1F8C24848F2B002EA5E5 /* StudySessionViewController.swift */; };
 		034D1F922484907A002EA5E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D1F912484907A002EA5E5 /* Constants.swift */; };
 		0365DA3324856A0D006101C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0365DA3224856A0D006101C2 /* GoogleService-Info.plist */; };
+		54178AAA24907A0900A1DA6E /* OnBoadringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54178AA924907A0900A1DA6E /* OnBoadringViewController.swift */; };
 		FE2BC0FB99A78AE70FA78B56 /* Pods_FocusTree_Renew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B06742CB26717B333B5DF4 /* Pods_FocusTree_Renew.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		0365DA3224856A0D006101C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		121F0E0B3E2DB4CC58DD729D /* Pods-FocusTree Renew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTree Renew.debug.xcconfig"; path = "Target Support Files/Pods-FocusTree Renew/Pods-FocusTree Renew.debug.xcconfig"; sourceTree = "<group>"; };
 		40EFB61E084101219AEC3566 /* Pods-FocusTree Renew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTree Renew.release.xcconfig"; path = "Target Support Files/Pods-FocusTree Renew/Pods-FocusTree Renew.release.xcconfig"; sourceTree = "<group>"; };
+		54178AA924907A0900A1DA6E /* OnBoadringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoadringViewController.swift; sourceTree = "<group>"; };
 		D0B06742CB26717B333B5DF4 /* Pods_FocusTree_Renew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FocusTree_Renew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 				034D1F8824848F11002EA5E5 /* LoginViewController.swift */,
 				034D1F8A24848F1E002EA5E5 /* SignUpViewController.swift */,
 				034D1F8C24848F2B002EA5E5 /* StudySessionViewController.swift */,
+				54178AA924907A0900A1DA6E /* OnBoadringViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				034D1F8924848F11002EA5E5 /* LoginViewController.swift in Sources */,
 				034D1F8D24848F2B002EA5E5 /* StudySessionViewController.swift in Sources */,
 				030C3ED52485661B00E41839 /* Utilities.swift in Sources */,
+				54178AAA24907A0900A1DA6E /* OnBoadringViewController.swift in Sources */,
 				034D1F7424848E40002EA5E5 /* AppDelegate.swift in Sources */,
 				034D1F7624848E40002EA5E5 /* SceneDelegate.swift in Sources */,
 				034D1F8B24848F1E002EA5E5 /* SignUpViewController.swift in Sources */,

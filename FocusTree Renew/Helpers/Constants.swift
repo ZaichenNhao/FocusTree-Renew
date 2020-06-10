@@ -28,5 +28,12 @@ struct Constants {
         
         static let Password = "password"
         
+        static let defaultUsername = "lmao@gmail.com"
+        
+        static let defaultPassword = "lmao00!"
+        
+        static let doneOnBoarding = "doneOnBoading"
+        
     }
+    
 }
