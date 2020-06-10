@@ -24,6 +24,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view
+        autoSignIn()
         setUpElements()
     }
     
@@ -32,6 +33,28 @@ class LoginViewController: UIViewController {
         errorLabel.alpha = 0
         
         //pass through elements to style
+    }
+    
+    func autoSignIn() {
+        
+        let isUserLoggedIn = UserDefaults.standard.bool(forKey: Constants.UserDefaults.isUserLoggedIn)
+        
+        if isUserLoggedIn == true {
+            
+            let username:String? = UserDefaults.standard.string(forKey: Constants.UserDefaults.Username)
+            let password:String? = UserDefaults.standard.string(forKey: Constants.UserDefaults.Password)
+            
+            Auth.auth().signIn(withEmail: username, password: password) { (result, err) in
+                
+                if err != nil {
+                    self.errorLabel.alpha = 1
+                    self.errorLabel.text = err!.localizedDescription
+                }
+                else {
+                    self.checkUserInfo()
+                }
+            }
+        }
     }
     
     func validateFields() -> String? {
@@ -60,6 +83,17 @@ class LoginViewController: UIViewController {
         present(vc, animated: true)
     }
     
+    func SaveSetting() {
+        
+        let username:String? = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password:String? = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        let defaults = UserDefaults.standard
+        
+        defaults.set(username, forKey: Constants.UserDefaults.Username)
+        defaults.set(password, forKey: Constants.UserDefaults.Password)
+        
+    }
     
     @IBAction func loginTapped(_ sender: Any) {
         
@@ -85,6 +119,7 @@ class LoginViewController: UIViewController {
                 else{
                     UserDefaults.standard.set(true, forKey: Constants.UserDefaults.isUserLoggedIn)
                     UserDefaults.standard.synchronize()
+                    self.SaveSetting()
                     self.checkUserInfo()
                 }
             }

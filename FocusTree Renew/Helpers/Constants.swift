@@ -23,5 +23,10 @@ struct Constants {
     struct UserDefaults {
         
         static let isUserLoggedIn = "isUserLoggedIn"
+        
+        static let Username = "username"
+        
+        static let Password = "password"
+        
     }
 }
