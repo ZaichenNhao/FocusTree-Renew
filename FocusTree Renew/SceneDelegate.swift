@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -17,7 +19,44 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+    
+        window = UIWindow(windowScene: windowScene)
+        
+        window?.rootViewController = OnBoadringViewController()
+        window?.makeKeyAndVisible()
+        
+        /*let onBoardingVC = OnBoadringViewController()
+        let studySessionVC = StudySessionViewController()
+        let loginVC = LoginViewController()
+        let doneOnBoarding = UserDefaults.standard.bool(forKey: Constants.UserDefaults.doneOnBoarding)
+        let isLoggedIn = UserDefaults.standard.bool(forKey: Constants.UserDefaults.isUserLoggedIn)
+        
+        if doneOnBoarding != true {
+            self.window?.rootViewController = onBoardingVC
+            self.window?.makeKeyAndVisible()
+        }
+        else if isLoggedIn == true {
+            
+            let username:String? = UserDefaults.standard.string(forKey: Constants.UserDefaults.Username)
+            let password:String? = UserDefaults.standard.string(forKey: Constants.UserDefaults.Password)
+            let defaultUsername:String! = Constants.UserDefaults.defaultUsername
+            let defaultPassword:String! = Constants.UserDefaults.defaultPassword
+            
+            Auth.auth().signIn(withEmail: username ?? defaultUsername, password: password ?? defaultPassword) { (result, err) in
+                
+                if err == nil {
+                    
+                    self.window?.rootViewController = studySessionVC
+                    self.window?.makeKeyAndVisible()
+                    
+                }
+            }
+        }
+        else {
+            self.window?.rootViewController = loginVC
+            self.window?.makeKeyAndVisible()
+        }*/
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
