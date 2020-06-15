@@ -21,21 +21,25 @@
       "size" : "29x29"
     },
     {
+      "filename" : "Logo@80x80.jpg",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
+      "filename" : "FTlogo@2x-1.jpg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
+      "filename" : "FTlogo@2x.jpg",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
+      "filename" : "FTlogo@3x.jpg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"

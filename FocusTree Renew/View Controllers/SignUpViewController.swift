@@ -25,6 +25,10 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    @IBOutlet weak var signUpLabel: UILabel!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,7 +42,14 @@ class SignUpViewController: UIViewController {
     func setUpElements() {
         errorLabel.alpha = 0
         
-        //here you can pass through the elements that you want to be styled 
+        //here you can pass through the elements that you want to be styled
+        Utilities.styleTextField(firstNameTextField)
+        Utilities.styleTextField(lastNameTextField)
+        Utilities.styleTextField(emailTextField)
+        Utilities.styleTextField(passwordTextField)
+        Utilities.styleText(signUpLabel)
+        Utilities.styleFilledButton(signUpButtom)
+        Utilities.styleHollowButton(loginButton)
     }
     
     func validateFields() -> String? {

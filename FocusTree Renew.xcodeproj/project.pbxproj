@@ -12,13 +12,15 @@
 		034D1F7624848E40002EA5E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D1F7524848E40002EA5E5 /* SceneDelegate.swift */; };
 		034D1F7B24848E40002EA5E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034D1F7924848E40002EA5E5 /* Main.storyboard */; };
 		034D1F7D24848E42002EA5E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 034D1F7C24848E42002EA5E5 /* Assets.xcassets */; };
-		034D1F8024848E42002EA5E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 034D1F7E24848E42002EA5E5 /* LaunchScreen.storyboard */; };
 		034D1F8924848F11002EA5E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D1F8824848F11002EA5E5 /* LoginViewController.swift */; };
 		034D1F8B24848F1E002EA5E5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D1F8A24848F1E002EA5E5 /* SignUpViewController.swift */; };
 		034D1F8D24848F2B002EA5E5 /* StudySessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D1F8C24848F2B002EA5E5 /* StudySessionViewController.swift */; };
 		034D1F922484907A002EA5E5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034D1F912484907A002EA5E5 /* Constants.swift */; };
 		0365DA3324856A0D006101C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0365DA3224856A0D006101C2 /* GoogleService-Info.plist */; };
 		54178AAA24907A0900A1DA6E /* OnBoadringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54178AA924907A0900A1DA6E /* OnBoadringViewController.swift */; };
+		544710522496F4F2009F8253 /* StartUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544710512496F4F2009F8253 /* StartUpViewController.swift */; };
+		544710542496F94E009F8253 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544710532496F94E009F8253 /* Launch Screen.storyboard */; };
+		5447105824970052009F8253 /* ModernSans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5447105724970051009F8253 /* ModernSans-Light.otf */; };
 		FE2BC0FB99A78AE70FA78B56 /* Pods_FocusTree_Renew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B06742CB26717B333B5DF4 /* Pods_FocusTree_Renew.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +31,6 @@
 		034D1F7524848E40002EA5E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		034D1F7A24848E40002EA5E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		034D1F7C24848E42002EA5E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		034D1F7F24848E42002EA5E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		034D1F8124848E42002EA5E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		034D1F8824848F11002EA5E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		034D1F8A24848F1E002EA5E5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +40,9 @@
 		121F0E0B3E2DB4CC58DD729D /* Pods-FocusTree Renew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTree Renew.debug.xcconfig"; path = "Target Support Files/Pods-FocusTree Renew/Pods-FocusTree Renew.debug.xcconfig"; sourceTree = "<group>"; };
 		40EFB61E084101219AEC3566 /* Pods-FocusTree Renew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusTree Renew.release.xcconfig"; path = "Target Support Files/Pods-FocusTree Renew/Pods-FocusTree Renew.release.xcconfig"; sourceTree = "<group>"; };
 		54178AA924907A0900A1DA6E /* OnBoadringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoadringViewController.swift; sourceTree = "<group>"; };
+		544710512496F4F2009F8253 /* StartUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUpViewController.swift; sourceTree = "<group>"; };
+		544710532496F94E009F8253 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		5447105724970051009F8253 /* ModernSans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ModernSans-Light.otf"; sourceTree = SOURCE_ROOT; };
 		D0B06742CB26717B333B5DF4 /* Pods_FocusTree_Renew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FocusTree_Renew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -75,13 +79,13 @@
 		034D1F7224848E40002EA5E5 /* FocusTree Renew */ = {
 			isa = PBXGroup;
 			children = (
+				544710532496F94E009F8253 /* Launch Screen.storyboard */,
 				034D1F8E2484905C002EA5E5 /* Helpers */,
 				034D1F8724848EFF002EA5E5 /* View Controllers */,
 				034D1F7324848E40002EA5E5 /* AppDelegate.swift */,
 				034D1F7524848E40002EA5E5 /* SceneDelegate.swift */,
 				034D1F7924848E40002EA5E5 /* Main.storyboard */,
 				034D1F7C24848E42002EA5E5 /* Assets.xcassets */,
-				034D1F7E24848E42002EA5E5 /* LaunchScreen.storyboard */,
 				0365DA3224856A0D006101C2 /* GoogleService-Info.plist */,
 				034D1F8124848E42002EA5E5 /* Info.plist */,
 			);
@@ -95,6 +99,7 @@
 				034D1F8A24848F1E002EA5E5 /* SignUpViewController.swift */,
 				034D1F8C24848F2B002EA5E5 /* StudySessionViewController.swift */,
 				54178AA924907A0900A1DA6E /* OnBoadringViewController.swift */,
+				544710512496F4F2009F8253 /* StartUpViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 			children = (
 				034D1F912484907A002EA5E5 /* Constants.swift */,
 				030C3ED42485661B00E41839 /* Utilities.swift */,
+				5447105724970051009F8253 /* ModernSans-Light.otf */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -185,9 +191,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				034D1F8024848E42002EA5E5 /* LaunchScreen.storyboard in Resources */,
 				0365DA3324856A0D006101C2 /* GoogleService-Info.plist in Resources */,
 				034D1F7D24848E42002EA5E5 /* Assets.xcassets in Resources */,
+				544710542496F94E009F8253 /* Launch Screen.storyboard in Resources */,
+				5447105824970052009F8253 /* ModernSans-Light.otf in Resources */,
 				034D1F7B24848E40002EA5E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +252,7 @@
 				034D1F8D24848F2B002EA5E5 /* StudySessionViewController.swift in Sources */,
 				030C3ED52485661B00E41839 /* Utilities.swift in Sources */,
 				54178AAA24907A0900A1DA6E /* OnBoadringViewController.swift in Sources */,
+				544710522496F4F2009F8253 /* StartUpViewController.swift in Sources */,
 				034D1F7424848E40002EA5E5 /* AppDelegate.swift in Sources */,
 				034D1F7624848E40002EA5E5 /* SceneDelegate.swift in Sources */,
 				034D1F8B24848F1E002EA5E5 /* SignUpViewController.swift in Sources */,
@@ -261,14 +269,6 @@
 				034D1F7A24848E40002EA5E5 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		034D1F7E24848E42002EA5E5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				034D1F7F24848E42002EA5E5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

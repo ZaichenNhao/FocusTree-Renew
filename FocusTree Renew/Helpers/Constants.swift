@@ -20,6 +20,8 @@ struct Constants {
         
         static let onBoardingViewController = "onBoardingVC"
         
+        static let startUpViewController = "startUpVC"
+        
     }
     
     struct UserDefaults {

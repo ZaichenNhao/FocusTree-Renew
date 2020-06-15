@@ -20,6 +20,10 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    @IBOutlet weak var signUpButton: UIButton!
+    
+    @IBOutlet weak var loginLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,6 +39,12 @@ class LoginViewController: UIViewController {
         errorLabel.alpha = 0
         
         //pass through elements to style
+        Utilities.styleTextField(emailTextField)
+        Utilities.styleTextField(passwordTextField)
+        Utilities.styleFilledButton(loginButton)
+        Utilities.styleHollowButton(signUpButton)
+        Utilities.styleText(loginLabel)
+        
     }
     
     func autoSignIn() {
