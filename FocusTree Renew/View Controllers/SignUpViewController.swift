@@ -50,6 +50,15 @@ class SignUpViewController: UIViewController {
         Utilities.styleText(signUpLabel)
         Utilities.styleFilledButton(signUpButtom)
         Utilities.styleHollowButton(loginButton)
+        
+        emailTextField.attributedPlaceholder = NSAttributedString(string:"Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.init(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00)])
+        
+        passwordTextField.attributedPlaceholder = NSAttributedString(string:"Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.init(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00)])
+        
+        firstNameTextField.attributedPlaceholder = NSAttributedString(string:"First Name", attributes: [NSAttributedString.Key.foregroundColor: UIColor.init(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00)])
+        
+        lastNameTextField.attributedPlaceholder = NSAttributedString(string:"Last Name", attributes: [NSAttributedString.Key.foregroundColor: UIColor.init(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00)])
+        
     }
     
     func validateFields() -> String? {
@@ -109,32 +118,30 @@ class SignUpViewController: UIViewController {
             
             //Create the user
             Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
-                
-                
+                    
+                    
                 //check for errors
-                
+                    
                 if err != nil {
                     self.errorLabel.text = err!.localizedDescription
                     self.errorLabel.alpha = 1
                 }
-                
-                else {
                     
+                else {
+                        
                     //user was created successfully
                     let db = Firestore.firestore()
-                    
+                        
                     db.collection("users").addDocument(data: ["firstName": firstName, "lastName": lastName, "uid": result!.user.uid]) { (error) in
                         if error != nil{
                             self.showError("User data couldn't be saved on the database")
                         }
+                        UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
+                        self.transitionToStudySession()
                     }
                 }
             }
-            
         }
-        
-        UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
-        transitionToStudySession()  
     }
     
     @IBAction func loginTapped(_ sender: Any) {

@@ -28,7 +28,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view
-        autoSignIn()
         setUpElements()
     }
     
@@ -44,6 +43,10 @@ class LoginViewController: UIViewController {
         Utilities.styleFilledButton(loginButton)
         Utilities.styleHollowButton(signUpButton)
         Utilities.styleText(loginLabel)
+        
+        emailTextField.attributedPlaceholder = NSAttributedString(string:"Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.init(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00)])
+        
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.init(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00)] )
         
     }
     

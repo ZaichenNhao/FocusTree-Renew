@@ -20,6 +20,39 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        if let windowScene = scene as? UIWindowScene {
+            
+            self.window = UIWindow(windowScene: windowScene)
+            let storyboard: UIStoryboard? = nil
+            
+            let isFirstTime = UserDefaults.standard.bool(forKey: Constants.UserDefaults.doneOnBoarding)
+            let isIn = UserDefaults.standard.bool(forKey: Constants.UserDefaults.isUserLoggedIn)
+            
+            if(isIn == true) {
+                //if they are already signed in
+                
+                let initialViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.studySessionViewController)
+                self.window!.rootViewController = initialViewController
+                self.window!.makeKeyAndVisible()
+                
+            }
+            else if isFirstTime == true {
+                //if this is first time, show onBoarding
+                let initialViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.onBoardingViewController)
+                self.window!.rootViewController = initialViewController
+                self.window!.makeKeyAndVisible()
+            }
+            else {
+                //show loginscreen
+                let initialViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.loginViewController)
+                self.window!.rootViewController = initialViewController
+                self.window!.makeKeyAndVisible()
+                
+            }
+            
+        }
+        
     
         /*let onBoardingVC = OnBoadringViewController()
         let studySessionVC = StudySessionViewController()
