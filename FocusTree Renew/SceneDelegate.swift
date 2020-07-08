@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        if let windowScene = scene as? UIWindowScene {
+        /*if let windowScene = scene as? UIWindowScene {
             
             self.window = UIWindow(windowScene: windowScene)
             let storyboard: UIStoryboard? = nil
@@ -49,9 +49,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 self.window!.rootViewController = initialViewController
                 self.window!.makeKeyAndVisible()
                 
-            }
+            }*/
             
-        }
+        
         
     
         /*let onBoardingVC = OnBoadringViewController()

@@ -35,6 +35,7 @@ class LoginViewController: UIViewController {
     
     func setUpElements(){
         
+        //styles and setups the design of the fields and buttons
         errorLabel.alpha = 0
         
         //pass through elements to style
@@ -51,7 +52,7 @@ class LoginViewController: UIViewController {
     }
     
     func autoSignIn() {
-        
+        //auto sign in the user
         let isUserLoggedIn = UserDefaults.standard.bool(forKey: Constants.UserDefaults.isUserLoggedIn)
         
         if isUserLoggedIn == true {
@@ -83,6 +84,7 @@ class LoginViewController: UIViewController {
     
     func validateFields() -> String? {
         
+        //checks if they have filled in all of the fields
         if emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             return "Please fill in all fields"
@@ -92,12 +94,14 @@ class LoginViewController: UIViewController {
     
     func showError(_ message:String) {
         
+        //makes the errorLabel visible and fills it with the error message
         errorLabel.text = message
         errorLabel.alpha = 1
     }
     
     func checkUserInfo() {
-            
+        
+        //presents the main view controller
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard.instantiateViewController(identifier: Constants.Storyboard.studySessionViewController)
@@ -110,6 +114,7 @@ class LoginViewController: UIViewController {
     
     func SaveSetting() {
         
+        //saves valeus for userDefaults
         let username:String? = emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         let password:String? = passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         
@@ -137,12 +142,14 @@ class LoginViewController: UIViewController {
             
             //signing in the user
             Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+                //checks if there is any error
                 if error != nil {
                     //user couldn't sign in
                     self.errorLabel.text = error!.localizedDescription
                     self.errorLabel.alpha = 1
                 }
                 else{
+                    //if there is no error, set userDefaults and present the new view
                     UserDefaults.standard.set(true, forKey: Constants.UserDefaults.isUserLoggedIn)
                     UserDefaults.standard.synchronize()
                     self.SaveSetting()
@@ -154,6 +161,8 @@ class LoginViewController: UIViewController {
     
     @IBAction func signUpTapped(_ sender: Any) {
         
+        //presents the signUp viewcontroller
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         let vc = storyboard.instantiateViewController(identifier: Constants.Storyboard.signUpViewController)
@@ -163,4 +172,30 @@ class LoginViewController: UIViewController {
         present(vc, animated: true)
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        //checks if the user is new
+        if Core.shared.isNewUser() {
+            //show onboarding
+            let vc = storyboard?.instantiateViewController(identifier: Constants.Storyboard.onBoardingViewController) as! OnBoadringViewController
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true)
+        }
+    }
+    
+}
+
+class Core {
+    
+    static let shared = Core()
+    
+    func isNewUser() -> Bool {
+        return !UserDefaults.standard.bool(forKey: Constants.UserDefaults.isNewUser)
+    }
+    
+    ///
+    func setIsNotNewUser(){
+        UserDefaults.standard.set(true, forKey: Constants.UserDefaults.isNewUser)
+    }
 }

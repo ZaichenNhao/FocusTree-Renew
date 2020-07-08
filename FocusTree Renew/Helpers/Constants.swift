@@ -38,6 +38,8 @@ struct Constants {
         
         static let doneOnBoarding = "doneOnBoading"
         
+        static let isNewUser = "isNewUser"
+        
     }
     
 }

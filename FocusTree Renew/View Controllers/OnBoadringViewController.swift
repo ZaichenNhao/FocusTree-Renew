@@ -10,29 +10,29 @@ import UIKit
 
 class OnBoadringViewController: UIViewController {
 
-    @IBOutlet weak var testButton: UIButton!
+    @IBOutlet var holderView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+            
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func buttonTapped(_ sender: Any) {
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        configure()
+    }
+    private func configure() {
+        // sets up the scrollview
         
-        let defaults = UserDefaults.standard
+        let scrollView = UIScrollView(frame: holderView.bounds)
+        holderView.addSubview(scrollView)
         
-        defaults.set(true, forKey: Constants.UserDefaults.doneOnBoarding)
-        
-        UserDefaults.standard.synchronize()
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        let vc = storyboard.instantiateViewController(identifier: Constants.Storyboard.loginViewController)
-        
-        vc.modalPresentationStyle = .overFullScreen
-        
-        present(vc, animated: true)
+        for x in 0..<3 {
+            
+            let pageView = UIView(frame:CGRect(x: <#T##CGFloat#>, y: <#T##CGFloat#>, width: <#T##CGFloat#>, height: <#T##CGFloat#>))
+        }
         
     }
+    
 }
