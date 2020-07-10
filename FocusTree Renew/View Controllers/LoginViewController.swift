@@ -49,6 +49,13 @@ class LoginViewController: UIViewController {
         
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.init(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00)] )
         
+        //setup background gradient
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        
+        gradientLayer.colors = [UIColor(red: 0.00, green: 0.61, blue: 0.55, alpha: 1).cgColor, UIColor(red: 0.00, green: 0.64, blue: 0.27, alpha: 1.00).cgColor]
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
+        
     }
     
     func autoSignIn() {
@@ -182,6 +189,12 @@ class LoginViewController: UIViewController {
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true)
         }
+        else if Core.shared.isLoggedIn() {
+            //show application screen
+            let vc = storyboard?.instantiateViewController(identifier: Constants.Storyboard.studySessionViewController) as! StudySessionViewController
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: false)
+        }
     }
     
 }
@@ -198,4 +211,17 @@ class Core {
     func setIsNotNewUser(){
         UserDefaults.standard.set(true, forKey: Constants.UserDefaults.isNewUser)
     }
+    
+    func isLoggedIn() -> Bool {
+        return UserDefaults.standard.bool(forKey: Constants.UserDefaults.isUserLoggedIn)
+    }
+    
+    func setIsLoggedIn() {
+        UserDefaults.standard.set(true, forKey: Constants.UserDefaults.isUserLoggedIn)
+    }
+    
+    func setLogOut() {
+        UserDefaults.standard.set(false, forKey: Constants.UserDefaults.isUserLoggedIn)
+    }
+    
 }

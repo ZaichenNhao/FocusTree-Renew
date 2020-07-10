@@ -20,9 +20,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="tPD-hP-XvZ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="2us-PC-pYm">
                                 <rect key="frame" x="40" y="104" width="334" height="400"/>
                                 <subviews>
@@ -88,15 +85,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="2us-PC-pYm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="6Rk-iZ-jcS"/>
-                            <constraint firstItem="tPD-hP-XvZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6ug-u0-kLE"/>
                             <constraint firstItem="2us-PC-pYm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="DRy-Lq-RGR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2us-PC-pYm" secondAttribute="trailing" constant="40" id="Oqc-K9-YDH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E76-Jo-LhN" secondAttribute="trailing" constant="40" id="TeK-M9-cB0"/>
                             <constraint firstItem="E76-Jo-LhN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="doS-9K-7eM"/>
-                            <constraint firstItem="tPD-hP-XvZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hkc-7I-n4w"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E76-Jo-LhN" secondAttribute="bottom" constant="20" id="lbn-xi-yfw"/>
-                            <constraint firstAttribute="bottom" secondItem="tPD-hP-XvZ" secondAttribute="bottom" id="rXX-s8-2nS"/>
-                            <constraint firstItem="tPD-hP-XvZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yxt-99-4Jh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -121,9 +114,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="08Q-Ez-ynN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="7WC-7f-1g7">
                                 <rect key="frame" x="40" y="104" width="334" height="530"/>
                                 <subviews>
@@ -203,12 +193,8 @@
                         <constraints>
                             <constraint firstItem="7WC-7f-1g7" firstAttribute="top" secondItem="FYE-5J-45M" secondAttribute="top" constant="60" id="2Mo-my-66Y"/>
                             <constraint firstItem="FYE-5J-45M" firstAttribute="trailing" secondItem="Eyg-w4-dU4" secondAttribute="trailing" constant="40" id="5Ue-xL-JEa"/>
-                            <constraint firstItem="08Q-Ez-ynN" firstAttribute="trailing" secondItem="FYE-5J-45M" secondAttribute="trailing" id="MyF-gH-ZAR"/>
                             <constraint firstItem="FYE-5J-45M" firstAttribute="trailing" secondItem="7WC-7f-1g7" secondAttribute="trailing" constant="40" id="QPQ-jS-97P"/>
-                            <constraint firstItem="08Q-Ez-ynN" firstAttribute="leading" secondItem="FYE-5J-45M" secondAttribute="leading" id="SdY-Ii-iQp"/>
-                            <constraint firstItem="08Q-Ez-ynN" firstAttribute="top" secondItem="lUj-rt-2BA" secondAttribute="top" id="TUk-Ds-fUy"/>
                             <constraint firstItem="Eyg-w4-dU4" firstAttribute="leading" secondItem="FYE-5J-45M" secondAttribute="leading" constant="40" id="Ua0-Uj-rSz"/>
-                            <constraint firstAttribute="bottom" secondItem="08Q-Ez-ynN" secondAttribute="bottom" id="VO2-3D-8eV"/>
                             <constraint firstItem="7WC-7f-1g7" firstAttribute="leading" secondItem="FYE-5J-45M" secondAttribute="leading" constant="40" id="rdP-sc-lJn"/>
                             <constraint firstItem="FYE-5J-45M" firstAttribute="bottom" secondItem="Eyg-w4-dU4" secondAttribute="bottom" constant="20" id="uQy-z2-b3A"/>
                             <constraint firstItem="Eyg-w4-dU4" firstAttribute="height" secondItem="Byy-pP-Mc6" secondAttribute="height" id="wRV-mE-IBt"/>
@@ -243,17 +229,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="6Gc-PV-Lqd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ur in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2s-Yh-m0W">
+                                <rect key="frame" x="186" y="397" width="36" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="6Gc-PV-Lqd" firstAttribute="top" secondItem="rb6-fB-CCc" secondAttribute="top" id="O1v-Aq-cIX"/>
-                            <constraint firstItem="6Gc-PV-Lqd" firstAttribute="leading" secondItem="pIc-hs-nho" secondAttribute="leading" id="Ofi-bF-mWM"/>
-                            <constraint firstItem="6Gc-PV-Lqd" firstAttribute="trailing" secondItem="pIc-hs-nho" secondAttribute="trailing" id="fr8-eP-CoI"/>
-                            <constraint firstAttribute="bottom" secondItem="6Gc-PV-Lqd" secondAttribute="bottom" id="rme-Wo-VTm"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pIc-hs-nho"/>
                     </view>
                 </viewController>
@@ -292,8 +276,4 @@
             <point key="canvasLocation" x="136" y="139"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Background" width="621" height="1344"/>
-        <image name="LaunchScreen" width="621" height="1344"/>
-    </resources>
 </document>

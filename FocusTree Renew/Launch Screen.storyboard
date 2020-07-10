@@ -21,10 +21,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FkM-E1-IeX" secondAttribute="bottom" id="2qz-py-DP2"/>
                             <constraint firstItem="FkM-E1-IeX" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="8y5-0B-idz"/>
                             <constraint firstAttribute="bottom" secondItem="FkM-E1-IeX" secondAttribute="bottom" id="Vdt-st-opK"/>
+                            <constraint firstItem="FkM-E1-IeX" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="WQz-CY-lx3"/>
                             <constraint firstItem="FkM-E1-IeX" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" id="fTb-H1-Onj"/>
+                            <constraint firstItem="FkM-E1-IeX" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="jbw-b0-egK"/>
                             <constraint firstItem="FkM-E1-IeX" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="l3D-iE-bHb"/>
+                            <constraint firstItem="FkM-E1-IeX" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="olO-la-drR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                     </view>

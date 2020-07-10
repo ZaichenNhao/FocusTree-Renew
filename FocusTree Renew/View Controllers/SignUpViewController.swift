@@ -51,6 +51,7 @@ class SignUpViewController: UIViewController {
         Utilities.styleFilledButton(signUpButtom)
         Utilities.styleHollowButton(loginButton)
         
+        //change the placeholder text, and color
         emailTextField.attributedPlaceholder = NSAttributedString(string:"Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.init(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00)])
         
         passwordTextField.attributedPlaceholder = NSAttributedString(string:"Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.init(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00)])
@@ -58,6 +59,13 @@ class SignUpViewController: UIViewController {
         firstNameTextField.attributedPlaceholder = NSAttributedString(string:"First Name", attributes: [NSAttributedString.Key.foregroundColor: UIColor.init(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00)])
         
         lastNameTextField.attributedPlaceholder = NSAttributedString(string:"Last Name", attributes: [NSAttributedString.Key.foregroundColor: UIColor.init(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00)])
+        
+        //setup background gradient
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        
+        gradientLayer.colors = [UIColor(red: 0.00, green: 0.61, blue: 0.55, alpha: 1).cgColor, UIColor(red: 0.00, green: 0.64, blue: 0.27, alpha: 1.00).cgColor]
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
         
     }
     

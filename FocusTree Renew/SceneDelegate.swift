@@ -23,6 +23,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         /*if let windowScene = scene as? UIWindowScene {
             
+            let window = UIWindow(windowScene: windowScene)
+            
+            if !Core.shared.isLoggedIn() {
+                
+                window.rootViewController = LoginViewController()
+                
+                self.window = window
+                window.makeKeyAndVisible()
+            }
+            else {
+                
+                window.rootViewController = StudySessionViewController()
+                
+                self.window = window
+                window.makeKeyAndVisible()
+            }
+        }*/
+        
+        /*if let windowScene = scene as? UIWindowScene {
+            
             self.window = UIWindow(windowScene: windowScene)
             let storyboard: UIStoryboard? = nil
             
